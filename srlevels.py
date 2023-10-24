@@ -2,9 +2,13 @@ import yfinance as yf
 import pandas as pd
 
 # Specify the stock symbol and the desired date range
-stock_symbol = 'AAPL'
-start_date = '2020-01-01'
-end_date = '2023-06-30'
+st = input("Que -accion? ")
+desde= input("Desde que Fecha?(A-M-D) ")
+hasta= input("Hasta que Fecha?(A-M-D) ")
+
+stock_symbol = 'st'
+start_date = desde
+end_date = hasta
 
 # Retrieve the historical price data using yfinance
 stock_data = yf.download(stock_symbol, start=start_date, end=end_date)
